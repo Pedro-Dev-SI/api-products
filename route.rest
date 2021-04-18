@@ -1,0 +1,29 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/607c72f0bf12b045f0eabf05
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+   "name": "Test 2",
+   "price": 4.75,
+   "amount": 250
+}
+
+###
+
+PATCH http://localhost:3000/products/607c72f0bf12b045f0eabf05
+Content-Type: application/json
+
+{
+   "price": 3.00
+}
+
+###
+
+DELETE http://localhost:3000/products/607c72f0bf12b045f0eabf05
